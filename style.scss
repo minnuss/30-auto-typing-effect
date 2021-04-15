@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // 10px
+  font-family: 'Poppins', sans-serif; // 'Montserrat', 'Roboto';
+}
+
+.typing {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #2c3e50;
+
+  &__content {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .speed {
+      position: absolute;
+      bottom: 20px;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 10px 20px;
+      font-size: 1.8rem;
+
+      input {
+        width: 50px;
+        padding: 5px;
+        font-size: 1.8rem;
+        background-color: #2c3e50;
+        margin-left: 5px;
+        text-align: center;
+        outline: none;
+      }
+
+      input[type='number'] {
+        color: #fff;
+      }
+    }
+  }
+}
